@@ -5,19 +5,26 @@ PUBLIC- TRANSPORT INTERACTIVE CIENT-SERVER DESIGN README FILE
 Steps to setup and execute server and client:
 $ ./servers SJ
 Above command, starts the server of San Jose City (SJ). This will accept requests from the San Jose city users.
+
 $ ./testGlade SJ
 This command opens up the UI for type 1 client. Upon execution of this command, User authentication UI opens up. Credentials for the user are added manually using MySQL commands.
+
 $ ./type2Client
 This command displays UI for type 2 client.
+
 $ ./type3
 This command opens up UI for type 3 client where in user can generate report of bus’s location and time.
+
 To simulate real time change in bus’s location we have implemented a stub which changes bus’s current location in our database. Below is the command to execute stub.c file
 $ ./stub.c
+
 Complete Deployment instructions of our project:
 Prerequisites: Before running the code, host PC should be installed with GTK3+ and Glade.
 To install these, follow below instructions and command.
+
 $ sudo apt-get install libgtk-3-dev
 Above command installs gtk (Gnome ToolKit) version 3 which enables PC to support Graphical User Interface.
+
 $ sudo apt-get install glade
 Above command installs Glade which is used to build the User Interface of our project.
 
